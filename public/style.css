@@ -29,6 +29,9 @@ a {
   text-decoration: none;
   color: #f5e2c8;
 }
+span {
+  color: #f5e2c8;
+}
 ul {
   list-style-type: none;
   margin: 0;

@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 
 function OfferBox({ isNew, title }) {
@@ -51,13 +51,19 @@ function App() {
     },
   ];
 
+  const handleCompanyNameClick = () => {
+    // Handle the click event for the "moja firma" button
+    console.log("moja firma button clicked!");
+    // Add your custom logic here
+  };
+
   return (
     <div className="body">
       <nav className="navbar">
         <div className="container">
-          <a href="#" className="company-name">
+          <span className="company-name" onClick={handleCompanyNameClick}>
             moja firma
-          </a>
+          </span>
           <ul className="nav-links">
             <i className="fa-sharp fa-solid fa-bars"></i>
             <li>
@@ -69,9 +75,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#" className="disabled">
-                kontakt
-              </a>
+              <span className="disabled">kontakt</span>
             </li>
           </ul>
         </div>
